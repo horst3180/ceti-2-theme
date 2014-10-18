@@ -24,14 +24,14 @@ Install the theme by copying "Ceti-3.14" to /usr/share/themes
 
 If necessary set the right permissions:
 
-sudo chmod -R 755 /usr/share/themes/Ceti-3.14
+    sudo chmod -R 755 /usr/share/themes/Ceti-3.14
 
 
 To set the theme, run the following commands in Terminal,
 
-gsettings set org.gnome.desktop.interface gtk-theme "Ceti-3.14"
-gsettings set org.gnome.desktop.wm.preferences theme "Ceti-3.14"
-gsettings set org.gnome.shell.extensions.user-theme name "Ceti-3.14"
+    gsettings set org.gnome.desktop.interface gtk-theme "Ceti-3.14"
+    gsettings set org.gnome.desktop.wm.preferences theme "Ceti-3.14"
+    gsettings set org.gnome.shell.extensions.user-theme name "Ceti-3.14"
 
 Instead of applying the theme with the gsettings commands you can select them in Gnome Tweak Tool like any other theme.
 
