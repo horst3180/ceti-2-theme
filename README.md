@@ -27,7 +27,7 @@ If necessary set the right permissions:
     sudo chmod -R 755 /usr/share/themes/Ceti-3.14
 
 
-To set the theme, run the following commands in Terminal,
+To set the theme, run the following commands:
 
     gsettings set org.gnome.desktop.interface gtk-theme "Ceti-3.14"
     gsettings set org.gnome.desktop.wm.preferences theme "Ceti-3.14"
