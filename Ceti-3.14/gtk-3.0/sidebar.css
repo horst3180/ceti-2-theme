@@ -1,0 +1,139 @@
+NautilusWindow * {
+    -GtkPaned-handle-size: 0;
+}
+
+NautilusWindow .sidebar,
+NautilusWindow .sidebar .view,
+NemoWindow .sidebar,
+NemoWindow .sidebar .view,
+.gedit-document-panel,
+.gedit-document-panel .list-row,
+.gedit-document-panel .list-row.button:active:hover,
+GeditFileBrowserView.view {
+  background-color: @dark_sidebar_bg;
+  color: @dark_fg_color;
+  text-shadow: 0 -1px alpha(black, 0.7);
+  icon-shadow: 0 -1px alpha(black, 0.7);
+  transition: none;
+  box-shadow: none;
+}
+
+NautilusWindow .sidebar .view,
+NautilusWindow .sidebar.frame {
+  box-shadow: inset -1px 0 @dark_borders;
+}
+
+NautilusWindow .sidebar .separator,
+NautilusWindow .sidebar .view .separator {
+  color: alpha(black, 0.2); 
+}
+
+NautilusWindow .sidebar .view.cell:selected,
+NautilusWindow .sidebar .view.cell:selected:hover,
+NautilusWindow .sidebar .view.cell:selected:focus {
+  background-image: url("assets/arrow.png"),
+                    linear-gradient(to left, @dark_borders 1px, transparent 1px),
+                    linear-gradient(to bottom, #51A0E0 1px, transparent 1px),
+                    linear-gradient(to top, #2A6DA6 1px, transparent 1px),
+                    linear-gradient(to bottom, #4286be, #236499);
+                    
+	background-position: right center;
+	background-repeat: no-repeat;
+  border-style: none;
+  box-shadow: none;
+}
+
+NautilusWindow .sidebar .scrollbar.trough {
+    border-width: 0;
+    border-right: 1px solid @borders;
+    background-image: linear-gradient(to left, @theme_base_color);
+}
+
+NemoWindow .sidebar .view.cell:selected,
+NemoWindow .sidebar .view.cell:selected:hover,
+NemoWindow .sidebar .view.cell:selected:focus,
+.gedit-document-panel .list-row:selected,
+GeditFileBrowserView.view.cell:selected,
+GeditFileBrowserView.view.cell:selected:hover,
+GeditFileBrowserView.view.cell:selected:focus {
+  background-image: linear-gradient(to bottom, #51A0E0 1px, transparent 1px),
+                    linear-gradient(to top, #2A6DA6 1px, transparent 1px),
+                    linear-gradient(to bottom, #4286be, #236499);
+                    
+	background-position: right center;
+	background-repeat: no-repeat;
+  border-style: none;
+  box-shadow: none;
+}
+
+NemoWindow .pane-separator,
+NemoWindow .pane-separator:hover,
+GeditWindow .pane-separator,
+GeditWindow .pane-separator:hover {
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: @dark_borders;
+}
+
+/*Gedit*/
+
+.gedit-document-panel-dragged-row {
+  border: 1px solid @dark_borders;
+  background-color: shade(@dark_sidebar_bg, 0.90);
+  color: @dark_fg_color;
+}
+
+.gedit-document-panel .list-row .button:hover,
+.gedit-document-panel .prelight-row .button:hover {
+  border-color: alpha(white, 0.2);
+}
+
+.gedit-document-panel .prelight-row .button {
+  color: @dark_fg_color;
+  border-color: alpha(white, 0.1);
+}
+
+.gedit-document-panel .list-row.button:hover {
+  background-color: alpha(white, 0.08);
+}
+
+.gedit-document-panel .list-row.button:active:hover {
+  background-color: alpha(white, 0.03);
+}
+
+GeditFileBrowserWidget GtkTreeView.view.expander, GeditFileBrowserWidget GtkTreeView.view.expander:hover {
+  color: @dark_fg_color;
+}
+
+GeditFileBrowserWidget .scrollbars-junction,
+GeditFileBrowserWidget .scrollbar.trough,
+GeditFileBrowserWidget .scrollbar.trough.horizontal {
+  background-color: @dark_sidebar_bg;
+	background-image: none;
+	border-color: @dark_sidebar_bg;
+	border-image: none;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.vertical {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"),url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.vertical:hover {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.vertical:active {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.horizontal {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"),url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.horizontal:hover {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"),url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
+
+GeditFileBrowserWidget .scrollbar.slider.horizontal:active {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"),url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+}
