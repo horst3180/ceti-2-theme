@@ -45,3 +45,5 @@ If the metacity theme doesn't show up in gnome-tweak-tool copy the theme folder 
 
 If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "Ceti-3.14/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
 
+
+![alt tag](http://fc01.deviantart.net/fs70/f/2014/292/d/b/ceti_3_14___theme_by_horst3180-d8393uc.jpg)
