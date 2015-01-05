@@ -102,3 +102,15 @@ switch-insensitive-dark
 switch-active-insensitive-dark
 switch-slider-dark
 switch-slider-insensitive-dark
+titlebutton-close
+titlebutton-close-prelight
+titlebutton-close-pressed
+titlebutton-close-unfocused
+titlebutton-max
+titlebutton-max-prelight
+titlebutton-max-pressed
+titlebutton-max-unfocused
+titlebutton-min
+titlebutton-min-prelight
+titlebutton-min-pressed
+titlebutton-min-unfocused

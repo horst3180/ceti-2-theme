@@ -11,6 +11,55 @@
   border-image: -gtk-scaled(url("borders/generic-border-focused-dark.png"),url("borders/generic-border-focused-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
+/*Linked Entries*/
+.header-bar .linked .entry,
+.toolbar .linked .entry,
+.primary-toolbar .linked .entry {
+  border-image: -gtk-scaled(url("borders/middle-entry-border-dark.png"),url("borders/middle-entry-border-dark@2.png")) 1 1 2 0 / 1px 1px 2px 0 stretch;
+}
+
+.header-bar .linked .entry:focus,
+.toolbar .linked .entry:focus,
+.primary-toolbar .linked .entry:focus {
+  border-image: -gtk-scaled(url("borders/middle-entry-focused-border-dark.png"),url("borders/middle-entry-focused-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+.header-bar .linked .entry:first-child, 
+.header-bar GtkComboBox.combobox-entry .entry:first-child,
+.toolbar .linked .entry:first-child, 
+.toolbar GtkComboBox.combobox-entry .entry:first-child,
+.primary-toolbar .linked .entry:first-child, 
+.primary-toolbar GtkComboBox.combobox-entry .entry:first-child {
+  border-image: -gtk-scaled(url("borders/left-entry-border-dark.png"),url("borders/left-entry-border-dark@2.png")) 2 1 3 2 / 2px 1px 3px 2px stretch;
+}
+
+.header-bar .linked .entry:first-child:focus,
+.header-bar GtkComboBox.combobox-entry .entry:first-child:focus,
+.toolbar .linked .entry:first-child:focus,
+.toolbar GtkComboBox.combobox-entry .entry:first-child:focus,
+.primary-toolbar .linked .entry:first-child:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:first-child:focus {
+  border-image: -gtk-scaled(url("borders/left-entry-focused-border-dark.png"),url("borders/left-entry-focused-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+.header-bar .linked .entry:last-child,
+.header-bar GtkComboBox.combobox-entry .entry:last-child,
+.toolbar .linked .entry:last-child,
+.toolbar GtkComboBox.combobox-entry .entry:last-child,
+.primary-toolbar .linked .entry:last-child,
+.primary-toolbar GtkComboBox.combobox-entry .entry:last-child {
+  border-image: -gtk-scaled(url("borders/right-entry-border-dark.png"),url("borders/right-entry-border-dark@2.png")) 2 2 3 0 / 2px 2px 3px 0 stretch;
+}
+
+.header-bar .linked .entry:last-child:focus,
+.header-bar GtkComboBox.combobox-entry .entry:last-child:focus,
+.toolbar .linked .entry:last-child:focus,
+.toolbar GtkComboBox.combobox-entry .entry:last-child:focus,
+.primary-toolbar .linked .entry:last-child:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:last-child:focus {
+  border-image: -gtk-scaled(url("borders/right-entry-focused-border-dark.png"),url("borders/right-entry-focused-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
 /*Buttons*/
 .header-bar .button,
 .header-bar .button.flat:hover,
@@ -19,7 +68,9 @@
 .toolbar .button.flat:hover,
 .toolbar .button:insensitive,
 .primary-toolbar .button.flat:hover,
-.primary-toolbar .button:hover {
+.primary-toolbar .button:hover,
+.header-bar .button.titlebutton:hover,
+.titlebar .button.titlebutton:hover {
   border-image: -gtk-scaled(url("borders/button-border-dark.png"),url("borders/button-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -58,7 +109,11 @@
 .primary-toolbar .button:focus:checked:hover,
 .primary-toolbar .button.flat:checked,
 .primary-toolbar .button:insensitive:checked,
-.primary-toolbar .button:insensitive.flat:checked {
+.primary-toolbar .button:insensitive.flat:checked,
+.header-bar .button.titlebutton:active,
+.titlebar .button.titlebutton:active,
+.header-bar .button.titlebutton:checked,
+.titlebar .button.titlebutton:checked {
   border-image: -gtk-scaled(url("borders/button-active-border-dark.png"),url("borders/button-active-border-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
 }
 
@@ -124,7 +179,6 @@
     border-color: transparent;
 }
 
-
 /*Selectionmode Buttons*/
 .titlebar.selection-mode .button, 
 .header-bar.selection-mode .button,
@@ -132,12 +186,15 @@
 .header-bar.selection-mode .button:insensitive,
 .titlebar.selection-mode .selection-menu:hover, 
 .header-bar.selection-mode .selection-menu:hover {
-  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
-  .titlebar.selection-mode .button:active, 
-  .header-bar.selection-mode .button:active,
-  .titlebar.selection-mode .button:checked, 
-  .header-bar.selection-mode .button:checked {
-    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch; }
+  border-image: -gtk-scaled(url("borders/button-border-suggested-dark.png"),url("borders/button-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
+
+.titlebar.selection-mode .button:active, 
+.header-bar.selection-mode .button:active,
+.titlebar.selection-mode .button:checked, 
+.header-bar.selection-mode .button:checked {
+    border-image: -gtk-scaled(url("borders/button-active-border-suggested-dark.png"),url("borders/button-active-border-suggested-dark@2.png")) 2 2 3 2 / 2px 2px 3px 2px stretch;
+}
 
 .selection-mode.titlebar .titlebutton {
   border-image: none;
@@ -150,12 +207,14 @@
 
 .titlebar.selection-mode .selection-menu, 
 .header-bar.selection-mode .selection-menu {
-  border-image: none; }
+  border-image: none;
+}
 
 .primary-toolbar .button, .primary-toolbar .button:insensitive {
   border-image: none;
   background-color: transparent;
-  background-image: none; }
+  background-image: none;
+}
 
 /*Linked Buttons*/
 /*Middle*/
@@ -436,7 +495,9 @@
 
 .button.flat, .menuitem.button.flat, /*.menuitem.button.flat:active, .menuitem.button.flat:checked,*/ .button:link, .button:visited, 
 .button:link:hover, .button:link:active, .button:link:checked, .button:link:active:hover, .button:link:checked:hover, .button:visited:hover, .button:visited:active, .button:visited:active:hover, 
-.notebook tab .button, .list-row.button, .scale-popup .button:hover {
+.notebook tab .button, .list-row.button, .scale-popup .button:hover,
+GtkCalendar.button, .header-bar GtkCalendar.button.titlebutton,
+.titlebar GtkCalendar.button.titlebutton, GtkCalendar.button:hover, GtkCalendar.button:backdrop {
   border-color: transparent;
   border-image: none;
   background-color: transparent;
