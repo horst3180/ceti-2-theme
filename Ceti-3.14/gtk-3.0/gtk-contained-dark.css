@@ -3465,7 +3465,7 @@ EphyWindow .floating-bar {
   border-width: 1px 0 0;
   border-radius: 0; }
   .documents-load-more.button:active, .documents-load-more.button:checked {
-    border-color: #282b30; }
+    border-color: #1a1d20; }
 
 .documents-icon-bg,
 .documents-collection-icon {
@@ -4141,7 +4141,7 @@ UnityDecoration {
     border-bottom-width: 0;
     border-radius: 4px 4px 0 0;
     padding: 1px 6px 0 6px;
-    background-image: linear-gradient(to bottom, #343a41, #343a41);
+    background-image: linear-gradient(to bottom, #393f47 22%, #343a41 22%);
     color: #E4E9ED;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
     box-shadow: inset 0 1px #4f5863; }
@@ -4155,7 +4155,7 @@ UnityDecoration {
 
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #343a41, #343a41);
+  background-image: linear-gradient(to bottom, #3f474f, #343a41);
   color: #E4E9ED;
   box-shadow: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8); }

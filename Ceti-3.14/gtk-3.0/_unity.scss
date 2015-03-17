@@ -25,8 +25,8 @@ UnityDecoration {
 
     //background-color: $bg_color; // Decoration background
     background-image: linear-gradient(to bottom,
-                                      $metacity_bg_a,
-                                      $metacity_bg_b);
+                                      lighten($metacity_bg_a, 2%) 22%,
+                                      $metacity_bg_a 22%);
     color: $wm_title; // The foreground color will be used to paint the text
 
     text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
@@ -51,7 +51,7 @@ UnityDecoration {
 UnityPanelWidget,
 .unity-panel {
   background-image: linear-gradient(to bottom,
-                                    $metacity_bg_a,
+                                    lighten($metacity_bg_a, 5%),
                                     $metacity_bg_b);
   color: $wm_title;
   box-shadow: none;
