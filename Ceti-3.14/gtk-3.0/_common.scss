@@ -1077,9 +1077,10 @@ $_floating_bar_bg: #3F464D;
     text-shadow: 0 -1px $selection_button_text_shadow;
     border-color: $selection_toolbar_border;
     background-image: linear-gradient(to bottom,
-                                      $selection_toolbar_bg_a,
+                                      lighten($selection_toolbar_bg_a, 3%) 22%,
+                                      $selection_toolbar_bg_a 22%,
                                       $selection_toolbar_bg_b);
-    box-shadow: inset 0 1px if($variant=='light', lighten($selection_toolbar_bg_a, 10%), transparentize(white, 0.7));
+    box-shadow: inset 0 1px lighten($selection_toolbar_bg_a, 13%);
     padding: 6px 6px 6px 6px;
     .title {
       color: $selected_fg_color;
