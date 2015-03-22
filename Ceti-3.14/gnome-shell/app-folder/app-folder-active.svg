@@ -21,25 +21,14 @@
      id="defs5716">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4172"
+       xlink:href="#linearGradient3793-5"
        id="linearGradient4485"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.36363635,0,0,1.7333332,-53.86361,-307.36668)"
+       gradientTransform="matrix(0.36363635,0,0,1.7333332,-53.86361,71.63332)"
        x1="684.37494"
        y1="38.288471"
        x2="684.36401"
        y2="97.709358" />
-    <linearGradient
-       id="linearGradient4172">
-      <stop
-         id="stop4174"
-         offset="0"
-         style="stop-color:#232323;stop-opacity:1" />
-      <stop
-         id="stop4176"
-         offset="1"
-         style="stop-color:#141414;stop-opacity:1" />
-    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4363"
@@ -94,6 +83,17 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0;" />
     </linearGradient>
+    <linearGradient
+       id="linearGradient3793-5">
+      <stop
+         style="stop-color:#282e34;stop-opacity:1;"
+         offset="0"
+         id="stop3795-8" />
+      <stop
+         style="stop-color:#3f454d;stop-opacity:1;"
+         offset="1"
+         id="stop3797-3" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="31.678384"
-     inkscape:cx="6.2944128"
-     inkscape:cy="109.40781"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="51.539302"
+     inkscape:cy="103.01775"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -114,9 +114,9 @@
      fit-margin-bottom="0"
      units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="723"
+     inkscape:window-height="721"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -155,15 +155,14 @@
            id="g4242-70"
            transform="translate(870.17644,276.99094)">
           <rect
-             transform="scale(1,-1)"
              rx="2"
              ry="2.0000002"
-             y="-241.5"
+             y="137.5"
              x="142.5"
              height="104"
              width="104"
              id="rect4179-2-34"
-             style="opacity:0.8;fill:url(#linearGradient4485);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+             style="opacity:0.9;fill:url(#linearGradient4485);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
           <rect
              rx="0.99999994"
              ry="1"

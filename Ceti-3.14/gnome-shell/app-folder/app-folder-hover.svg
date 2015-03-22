@@ -21,7 +21,7 @@
      id="defs5027">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4297"
+       xlink:href="#linearGradient3772-0"
        id="linearGradient4291"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.36363635,0,0,1.7333332,-53.86361,71.63332)"
@@ -29,18 +29,6 @@
        y1="38.288471"
        x2="684.36401"
        y2="97.709358" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4297">
-      <stop
-         style="stop-color:#616367;stop-opacity:1"
-         offset="0"
-         id="stop4299" />
-      <stop
-         style="stop-color:#4a4b4c;stop-opacity:1"
-         offset="1"
-         id="stop4301" />
-    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4331"
@@ -85,6 +73,17 @@
          offset="1"
          id="stop4367" />
     </linearGradient>
+    <linearGradient
+       id="linearGradient3772-0">
+      <stop
+         id="stop3774-6"
+         offset="0"
+         style="stop-color:#646e7c;stop-opacity:1;" />
+      <stop
+         id="stop3776-5"
+         offset="1"
+         style="stop-color:#444c57;stop-opacity:1;" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -94,8 +93,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.656854"
-     inkscape:cx="28.18424"
-     inkscape:cy="18.748194"
+     inkscape:cx="-13.004732"
+     inkscape:cy="18.394641"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -104,9 +103,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1366"
-     inkscape:window-height="723"
+     inkscape:window-height="721"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -140,7 +139,7 @@
          transform="translate(616,269)"
          id="g4242-7">
         <rect
-           style="opacity:0.8;fill:url(#linearGradient4291);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="opacity:0.8;fill:url(#linearGradient4291);fill-opacity:1.0;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect4179-2-5"
            width="104"
            height="104"

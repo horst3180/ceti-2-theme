@@ -27,20 +27,8 @@
        y1="38.288471"
        x1="684.37494"
        id="linearGradient4193-7"
-       xlink:href="#linearGradient4187"
+       xlink:href="#linearGradient3772"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient4187"
-       inkscape:collect="always">
-      <stop
-         id="stop4189"
-         offset="0"
-         style="stop-color:#505256;stop-opacity:1" />
-      <stop
-         id="stop4191"
-         offset="1"
-         style="stop-color:#393a3b;stop-opacity:1" />
-    </linearGradient>
     <linearGradient
        gradientUnits="userSpaceOnUse"
        y2="41"
@@ -85,6 +73,17 @@
          offset="1"
          id="stop4367" />
     </linearGradient>
+    <linearGradient
+       id="linearGradient3772">
+      <stop
+         id="stop3774"
+         offset="0"
+         style="stop-color:#59626e;stop-opacity:1;" />
+      <stop
+         id="stop3776"
+         offset="1"
+         style="stop-color:#3d444e;stop-opacity:1;" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -94,8 +93,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="25.006174"
-     inkscape:cy="87.833396"
+     inkscape:cx="-16.182796"
+     inkscape:cy="87.479843"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -103,8 +102,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
@@ -141,7 +140,7 @@
          transform="translate(616,269)"
          id="g4242">
         <rect
-           style="opacity:0.8;fill:url(#linearGradient4193-7);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666669"
+           style="opacity:0.8;fill:url(#linearGradient4193-7);fill-opacity:1.0;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666669"
            id="rect4179-2"
            width="104"
            height="104"
