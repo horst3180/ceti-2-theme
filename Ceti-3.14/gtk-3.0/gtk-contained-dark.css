@@ -3924,6 +3924,7 @@ PantheonTerminalPantheonTerminalWindow .notebook {
   PantheonTerminalPantheonTerminalWindow .notebook tab.reorderable-page.top.active-page {
     background-color: transparent;
     box-shadow: none;
+    background-image: linear-gradient(to bottom, #2E343B, #2a2f35);
     border-image: -gtk-scaled(url("borders/tab-active-dark.png"), url("borders/tab-active-dark@2.png")) 2 7 2 7/2px 7px 2px 7px stretch;
     border-radius: 2px;
     border-width: 0 5px 1px 5px;

@@ -81,12 +81,9 @@ PantheonTerminalPantheonTerminalWindow .notebook {
     background-color: transparent;
     box-shadow: none;
 
-    @if $darker=='true' {
-
-      background-image: linear-gradient(to bottom,
-                                        $_notebook_tab_gradient_a,
-		                        					  $_notebook_tab_gradient_b);
-    }
+    background-image: linear-gradient(to bottom,
+                                      $_notebook_tab_gradient_a,
+	                        					  $_notebook_tab_gradient_b);
 
     @include _border(tab-active#{$tab_asset_suffix}, $width: 0 5px 1px 5px, $image-width: 2 7 2 7 / 2px 7px 2px 7px);
   }
