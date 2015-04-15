@@ -32,8 +32,6 @@ middle-vertical-entry-focused-border
 bottom-vertical-entry-focused-border
 entry-normal-border
 entry-focused-border
-tooltip-generic-border
-tooltip-generic-border-focused
 trough-border
 trough-border-selected
 scale-trough-border

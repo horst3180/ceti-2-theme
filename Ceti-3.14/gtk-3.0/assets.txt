@@ -36,6 +36,8 @@ scrollbar-slider-active
 scrollbar-slider-horizontal
 scrollbar-slider-horizontal-hover
 scrollbar-slider-horizontal-active
+scrollbar-slider-overlay
+scrollbar-slider-overlay-horizontal
 scrollbar-trough
 scrollbar-trough-horizontal
 slider
