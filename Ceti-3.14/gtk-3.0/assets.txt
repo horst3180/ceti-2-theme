@@ -96,6 +96,8 @@ scrollbar-slider-active-dark
 scrollbar-slider-horizontal-dark
 scrollbar-slider-horizontal-hover-dark
 scrollbar-slider-horizontal-active-dark
+scrollbar-slider-overlay-dark
+scrollbar-slider-overlay-horizontal-dark
 scrollbar-trough-dark
 scrollbar-trough-horizontal-dark
 slider-dark
