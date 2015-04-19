@@ -444,6 +444,27 @@ WnckPager {
   &:focus:selected { background-color: red; color: green; background-image: none;}
 }
 
+ClockBox {
+  color: nth($_fg_color, 2);
+  text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+}
+
+// Xfce Panel
+.xfce4-panel.panel {
+  background-color: #2D3136;
+
+  .button.flat {
+    background-color: transparentize(#3C3E40, 1);
+    border-radius: 0;
+
+    text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+    icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
+
+    &:hover { @include button(hover, $dark:'true'); border-radius: 0;}
+    &:active, &:checked { @include button(active, $dark:'true'); border-radius: 0; }
+  }
+}
+
 // Elementary Apps
 
 //

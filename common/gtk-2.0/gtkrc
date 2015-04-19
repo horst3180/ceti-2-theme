@@ -1,10 +1,10 @@
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#333333\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#2468A0\nselected_fg_color:#FFFFFF\ntext_color:#333333\nbg_color:#E9EAEB\ninsensitive_bg_color:#F1F1F2\ntooltip_bg_color:#343434"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#333333\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#2468A0\nselected_fg_color:#FFFFFF\ntext_color:#333333\nbg_color:#E9EAEB\ninsensitive_bg_color:#F1F1F2\ntooltip_bg_color:#343434\nlink_color:#2468A0"
 
 gtk-icon-sizes		= "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
 
-#include "panel.rc"	# This includes the file that handles the panels.
+include "panel.rc"	# This includes the file that handles the panels.
 
 style "default" {
 
@@ -70,6 +70,13 @@ style "default" {
   GtkTreeView::odd_row_color = shade(0.98, @base_color)
 
   GtkExpander::expander-size = 11
+
+  GnomeHRef::link_color = @link_color
+  GtkHTML::link-color = @link_color
+  GtkIMHtmlr::hyperlink-color = @link_color
+  GtkIMHtml::hyperlink-color = @link_color
+  GtkWidget::link-color = @link_color
+  GtkWidget::visited-link-color = @text_color
 
   # Colors
 
@@ -680,7 +687,7 @@ style "scrollbar" {
 style "menubar" {
 
   bg[PRELIGHT] = "#FFF"	
-  bg[NORMAL] = "#343B42"
+  bg[NORMAL] = "#343A41"
   fg[NORMAL] = "#E4E9ED"
   fg[SELECTED] = @text_color
   fg[INSENSITIVE] = shade(0.5, @selected_fg_color)
@@ -2327,6 +2334,53 @@ style "eclipse-tooltips" {
 
 }
 
+style "xfdesktop-icon-view" {
+  XfdesktopIconView::label-alpha = 0
+  XfdesktopIconView::selected-label-alpha = 100
+  XfdesktopIconVIew::ellipsize-icon-labels = 1
+
+  base[NORMAL] = @selected_bg_color
+  base[SELECTED] = @selected_bg_color
+  base[ACTIVE] = @selected_bg_color
+
+  fg[NORMAL] = @selected_fg_color
+  fg[SELECTED] = @selected_fg_color
+  fg[ACTIVE] = @selected_fg_color
+
+  engine "murrine" {
+    textstyle = 5
+    text_shade = 0.05
+  }
+}
+
+style "xfwm-tabwin" {
+  Xfwm4TabwinWidget::border-width = 1
+  Xfwm4TabwinWidget::border-alpha = 1.0
+  Xfwm4TabwinWidget::icon-size = 64
+  Xfwm4TabwinWidget::alpha = 1.0
+  Xfwm4TabwinWidget::border-radius = 2
+
+	bg[NORMAL] = @bg_color
+	bg[SELECTED] = @bg_color
+
+	fg[NORMAL] = @fg_color
+
+  engine "murrine" {
+    contrast = 0.7
+    glazestyle = 0
+    glowstyle = 0
+    highlight_shade = 1.0
+    gradient_shades = {1.0,1.0,1.0,1.0}
+    border_shades = { 0.8, 0.8 }
+  }
+}
+
+style "xfwm-tabwin-button" {
+
+  font_name = "bold"
+  bg[SELECTED] = @selected_bg_color
+}
+
 # Chromium
 style "chrome-gtk-frame" {
 
@@ -2444,3 +2498,8 @@ widget "*openoffice-toplevel*GtkEntry"                              style "libre
 widget "*openoffice-toplevel*GtkSpinButton"                         style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkEntry"                             style "libreoffice_entry"
 widget "*libreoffice-toplevel*GtkSpinButton"                        style "libreoffice_entry"
+
+# Xfce
+widget_class "*XfdesktopIconView*"                                  style "xfdesktop-icon-view"
+widget "xfwm4-tabwin*"                                              style "xfwm-tabwin"
+widget "xfwm4-tabwin*GtkButton*"                                    style "xfwm-tabwin-button"
