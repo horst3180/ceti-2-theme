@@ -3991,7 +3991,7 @@ TerminalWindow .notebook {
   TerminalWindow .notebook tab.reorderable-page.top, TerminalWindow .notebook.header.top {
     background-color: #272c31;
     border-bottom-width: 0px;
-    box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px rgba(26, 29, 32, 0.5); }
+    box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px #171a1d, inset 0 1px #171a1d; }
   TerminalWindow .notebook tab.reorderable-page.top:hover {
     background-color: #2b3136; }
   TerminalWindow .notebook tab.reorderable-page.top,
