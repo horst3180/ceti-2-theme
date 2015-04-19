@@ -17,6 +17,7 @@ CETI_ENABLE([GTK2],        [gtk2],        [GTK2],         [disable])
 CETI_ENABLE([GTK3],        [gtk3],        [GTK3],         [disable])
 CETI_ENABLE([METACITY],    [metacity],    [Metacity],     [disable])
 CETI_ENABLE([UNITY],       [unity],       [Unity],        [disable])
+CETI_ENABLE([XFWM],        [xfwm],        [XFWM],         [disable])
 
 CETI_GNOME
 

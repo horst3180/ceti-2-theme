@@ -4,6 +4,8 @@ Name=Ceti-2
 Comment=A theme
 Encoding=UTF-8
 
+Name[de_DE]=index.theme
+
 [X-GNOME-Metatheme]
 GtkTheme=Ceti-2
 MetacityTheme=Ceti-2

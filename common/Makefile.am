@@ -26,6 +26,10 @@ if ENABLE_UNITY
 	cp -r --no-preserve=mode,ownership $(srcdir)/unity $(ithemedir)
 endif # ENABLE_UNITY
 
+if ENABLE_XFWM
+	cp -r --no-preserve=mode,ownership $(srcdir)/xfwm4 $(ithemedir)
+endif # ENABLE_XFWM
+
 
 uninstall-local:
 	rm -rf $(ithemedir)
@@ -40,5 +44,6 @@ dist-hook:
 		gtk-3.0 \
 		metacity-1 \
 		unity \
+		xfwm4 \
 		index.theme \
 		$(distdir)
