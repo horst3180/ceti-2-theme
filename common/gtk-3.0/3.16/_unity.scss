@@ -29,7 +29,7 @@ UnityDecoration {
                                       $metacity_bg_a 22%);
     color: $wm_title; // The foreground color will be used to paint the text
 
-    text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+    text-shadow: 0 -1px $wm_title_shadow;
     box-shadow: inset 0 1px $wm_highlight;
 
     &:backdrop {
@@ -55,7 +55,7 @@ UnityPanelWidget,
                                     $metacity_bg_b);
   color: $wm_title;
   box-shadow: none;
-  text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+  text-shadow: 0 -1px $wm_title_shadow;
 }
 
 .unity-panel.menubar.menuitem:hover,

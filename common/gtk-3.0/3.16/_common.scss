@@ -926,7 +926,7 @@ $_floating_bar_bg: #3F464D;
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 2px;
 
-    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+    @include _border(header-separator-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
   }
   GtkComboBox .separator {
     -GtkWidget-wide-separators: true;
@@ -958,7 +958,7 @@ $_floating_bar_bg: #3F464D;
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 2px;
 
-    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+    @include _border(header-separator-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
   }
   // make widgets on primary toolbars dark
   @extend %header_widgets;
@@ -1026,7 +1026,7 @@ $_floating_bar_bg: #3F464D;
     color: $wm_title;
     font-weight: bold;
     padding: 0px 12px;
-    text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+    text-shadow: 0 -1px $wm_title_shadow;
   
     &:backdrop { opacity: 0.5; }
   }
@@ -1050,7 +1050,7 @@ $_floating_bar_bg: #3F464D;
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 2px;
 
-    @include _border(header-separator#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+    @include _border(header-separator-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
   }
   .right .header-bar-separator,
   & > GtkBox.right > .separator.vertical,
@@ -1059,7 +1059,7 @@ $_floating_bar_bg: #3F464D;
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 9px;
 
-    @include _border(header-separator-right#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+    @include _border(header-separator-right-dark, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
   }
   .left .header-bar-separator,
   & > GtkBox.left > .separator.vertical,
@@ -1068,7 +1068,7 @@ $_floating_bar_bg: #3F464D;
     -GtkWidget-wide-separators: 1;
     -GtkWidget-separator-width: 9px;
 
-    @include _border(header-separator-left#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 4px, $image-width: 0 1 0 4 / 0 1px 0 4px);
+    @include _border(header-separator-left-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 4px, $image-width: 0 1 0 4 / 0 1px 0 4px);
   }
   // Selectionmode
   &.selection-mode {
@@ -1094,7 +1094,7 @@ $_floating_bar_bg: #3F464D;
       -GtkWidget-wide-separators: 1;
       -GtkWidget-separator-width: 2px;
 
-      @include _border(header-separator-selectionmode#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
+      @include _border(header-separator-selectionmode-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 1px, $image-width: 0 1 0 1 / 0 1px 0 1px);
     }
     .right .header-bar-separator,
     & > GtkBox.right > .separator.vertical,
@@ -1103,7 +1103,7 @@ $_floating_bar_bg: #3F464D;
       -GtkWidget-wide-separators: 1;
       -GtkWidget-separator-width: 9px;
 
-      @include _border(header-separator-selectionmode-right#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
+      @include _border(header-separator-selectionmode-right-dark, $prefix:assets, $radius: 0, $width: 0 4px 0 1px, $image-width: 0 4 0 1 / 0 4px 0 1px);
     }
     .left .header-bar-separator,
     & > GtkBox.left > .separator.vertical,
@@ -1112,31 +1112,31 @@ $_floating_bar_bg: #3F464D;
       -GtkWidget-wide-separators: 1;
       -GtkWidget-separator-width: 9px;
 
-      @include _border(header-separator-selectionmode-left#{$darker_asset_suffix}, $prefix:assets, $radius: 0, $width: 0 1px 0 4px, $image-width: 0 1 0 4 / 0 1px 0 4px);
+      @include _border(header-separator-selectionmode-left-dark, $prefix:assets, $radius: 0, $width: 0 1px 0 4px, $image-width: 0 1 0 4 / 0 1px 0 4px);
     }
     // Selectionmode buttons
     .button {
-      @include button(selection-mode, $darker);
+      @include button(selection-mode, $dark:'true');
       &.flat { @include button(undecorated); }
-      &:hover { @include button(selection-mode-hover, $darker); }
-      &:active, &:checked { @include button(selection-mode-active, $darker); }
+      &:hover { @include button(selection-mode-hover, $dark:'true'); }
+      &:active, &:checked { @include button(selection-mode-active, $dark:'true'); }
       &.flat:insensitive {
         @include button(undecorated);
       }
       &:insensitive {
-        @include button(selection-mode-insensitive, $darker);
+        @include button(selection-mode-insensitive, $dark:'true');
         &:active, &:checked {
-          @include button(selection-mode-insensitive-active, $darker);
+          @include button(selection-mode-insensitive-active, $dark:'true');
         }
       }
       &.suggested-action {
-        @include button(normal, $darker);
-        &:hover { @include button(hover, $darker); }
+        @include button(normal, $dark:'true');
+        &:hover { @include button(hover, $dark:'true'); }
         &:active, &:checked {
-          @include button(active, $darker);
-          @include _border(button-active-border-suggested#{$darker_asset_suffix});
+          @include button(active, $dark:'true');
+          @include _border(button-active-border-suggested-dark);
         }
-        &:insensitive { @include button(insensitive, $darker); }
+        &:insensitive { @include button(insensitive, $dark:'true'); }
       }
     }
     .selection-menu {
@@ -1676,7 +1676,7 @@ column-header.button.dnd { // for treeview-like derive widgets
   background-color: $primary_toolbar_bg_a;
   & > .menuitem {
     padding: 4px 8px;
-    text-shadow: 0 #{$shadow_pos * $darker_shadow_pos}px $wm_title_shadow;
+    text-shadow: 0 -1px $wm_title_shadow;
     &:hover { //Seems like it :hover even with keyboard focus
       background-color: $base_color;
       color: $fg_color;
@@ -1684,7 +1684,7 @@ column-header.button.dnd { // for treeview-like derive widgets
       text-shadow: none;
     }
     &:insensitive {
-      color: if($darker=='false', $insensitive_fg_color, nth($_insensitive_fg_color, 2));
+      color: nth($_insensitive_fg_color, 2);
       box-shadow: none;
       text-shadow: none;
 
@@ -2916,7 +2916,7 @@ GtkVolumeButton.button { padding: 8px; }
     border-radius: 0;
     margin: 1px 3px 3px 3px;
     background-color: $wm_bg_a;
-    border: solid 1px if($darker=='false', $borders_color, nth($_borders_color, 2));
+    border: solid 1px nth($_borders_color, 2);
     box-shadow: inset 0 1px $wm_highlight;
   }
 }

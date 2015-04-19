@@ -617,10 +617,10 @@ MarlinViewWindow *:selected:focus {
 }
 
 .marlin-pathbar.pathbar {
-  @include entry(normal, $darker);
+  @include entry(normal, $dark:'true');
 
-  &:focus { @include entry(focus, $darker) }
-  &:insensitive { @include entry(insensitive, $darker) }
+  &:focus { @include entry(focus, $dark:'true') }
+  &:insensitive { @include entry(insensitive, $dark:'true') }
   &:active, &:checked {
     background-image: none;
     background-color: transparentize(black, 0.85);

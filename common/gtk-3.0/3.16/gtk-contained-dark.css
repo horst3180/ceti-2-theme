@@ -319,8 +319,6 @@ GtkFlowBox .grid-child {
   color: #E4E9ED;
   outline-color: rgba(228, 233, 237, 0.3);
   background-image: linear-gradient(to bottom, #59626E, #3d444e);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -353,8 +351,6 @@ GtkFlowBox .grid-child {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #67717f, #444b57);
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -651,8 +647,6 @@ GtkFlowBox .grid-child {
   color: #E4E9ED;
   outline-color: rgba(228, 233, 237, 0.3);
   background-image: linear-gradient(to bottom, #59626E, #3d444e);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -662,8 +656,6 @@ GtkFlowBox .grid-child {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #67717f, #444b57);
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -1246,11 +1238,11 @@ GtkComboBox {
           border-style: solid;
           border-color: transparent; }
         .header-bar.selection-mode .button.suggested-action:active, .header-bar.selection-mode .button.suggested-action:checked {
-          color: #E4E9ED;
+          color: #2f99f1;
           outline-color: rgba(228, 233, 237, 0.3);
           background-image: linear-gradient(to bottom, #34383e, #494e55);
-          text-shadow: 0 -1px rgba(255, 255, 255, 0.4);
-          icon-shadow: 0 -1px rgba(255, 255, 255, 0.4);
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+          icon-shadow: 0 0 2px #2468A0;
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
           border-image: -gtk-scaled(url("borders/button-active-border-dark.png"), url("borders/button-active-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
           border-radius: 2px;
@@ -1359,8 +1351,8 @@ GtkComboBox {
   color: #E4E9ED;
   outline-color: rgba(228, 233, 237, 0.3);
   background-image: linear-gradient(to bottom, #59626E, #3d444e);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-  icon-shadow: 0 1px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
   border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
   border-width: 1px 1px 2px 1px;
@@ -1386,8 +1378,8 @@ GtkComboBox {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #67717f, #444b57);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -2616,8 +2608,6 @@ GtkScrolledWindow GtkViewport.frame {
       color: #E4E9ED;
       outline-color: rgba(228, 233, 237, 0.3);
       background-image: linear-gradient(to bottom, #67717f, #444b57);
-      text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-      icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
@@ -2806,8 +2796,6 @@ GtkColorSwatch {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #59626E, #3d444e);
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -2817,8 +2805,6 @@ GtkColorSwatch {
       color: #E4E9ED;
       outline-color: rgba(228, 233, 237, 0.3);
       background-image: linear-gradient(to bottom, #67717f, #444b57);
-      text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-      icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
@@ -2910,8 +2896,8 @@ GtkVolumeButton.button {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #67717f, #444b57);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
     border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
@@ -3583,15 +3569,15 @@ PanelApplet .button:focus {
   color: #E4E9ED;
   outline-color: rgba(228, 233, 237, 0.3);
   background-image: linear-gradient(to bottom, #59626E, #3d444e);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-  icon-shadow: 0 1px rgba(0, 0, 0, 0.7); }
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+  icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
   PanelApplet .button:hover,
   PanelApplet .button:focus:hover {
     color: #E4E9ED;
     outline-color: rgba(228, 233, 237, 0.3);
     background-image: linear-gradient(to bottom, #67717f, #444b57);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.7); }
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
   PanelApplet .button:active, PanelApplet .button:active:hover, PanelApplet .button:checked, PanelApplet .button:checked:hover,
   PanelApplet .button:focus:active,
   PanelApplet .button:focus:active:hover,
@@ -3642,8 +3628,8 @@ ClockBox {
       color: #E4E9ED;
       outline-color: rgba(228, 233, 237, 0.3);
       background-image: linear-gradient(to bottom, #67717f, #444b57);
-      text-shadow: 0 1px rgba(0, 0, 0, 0.7);
-      icon-shadow: 0 1px rgba(0, 0, 0, 0.7);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+      icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
@@ -3698,7 +3684,7 @@ MarlinViewWindow *:selected:focus {
 .marlin-pathbar.pathbar {
   background-color: transparent;
   color: #E4E9ED;
-  background-image: linear-gradient(to bottom, #2B2F33, #303439);
+  background-image: linear-gradient(to bottom, #4B525C, #6A727E);
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
   border-image: -gtk-scaled(url("borders/entry-normal-border-dark.png"), url("borders/entry-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
   border-radius: 2px;
@@ -3707,7 +3693,7 @@ MarlinViewWindow *:selected:focus {
   border-color: transparent; }
   .marlin-pathbar.pathbar:focus {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #2B2F33, #2B2F33);
+    background-image: linear-gradient(to bottom, #626b78, #848c97);
     box-shadow: none;
     border-image: -gtk-scaled(url("borders/entry-focused-border-dark.png"), url("borders/entry-focused-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
     border-radius: 2px;
@@ -4020,13 +4006,12 @@ TerminalWindow .notebook {
     border: 1px solid rgba(255, 255, 255, 0.1); }
   TerminalWindow .notebook .active-page .button:active {
     color: #E4E9ED;
-    background-image: linear-gradient(to bottom, #1e2226, #2a2e34);
     border: 1px solid #1a1d20;
     background-image: linear-gradient(to bottom, #1e2226, #2a2e34); }
   TerminalWindow .notebook tab.reorderable-page.top, TerminalWindow .notebook.header.top {
     background-color: #272c31;
     border-bottom-width: 0px;
-    box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px #171a1d, inset 0 1px #171a1d; }
+    box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px rgba(26, 29, 32, 0.5); }
   TerminalWindow .notebook tab.reorderable-page.top:hover {
     background-color: #2b3136; }
   TerminalWindow .notebook tab.reorderable-page.top,

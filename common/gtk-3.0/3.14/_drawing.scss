@@ -132,8 +132,14 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_bg_a,
                                       $_bg_b);
 
-    text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
-    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    @if $dark=='true' {
+      text-shadow: 0 -1px $_text_icon_shadow;
+      icon-shadow: 0 -1px $_text_icon_shadow;
+    }
+    @if $dark=='false' {
+      text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+      icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    }
 
     @if $border==true {
       @include _border(button-normal-border#{$_asset_suffix});
@@ -159,8 +165,15 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                                       $_hover_bg_a,
                                       $_hover_bg_b);
 
-    text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
-    icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    @if $dark=='true' {
+      text-shadow: 0 -1px $_text_icon_shadow;
+      icon-shadow: 0 -1px $_text_icon_shadow;
+    }
+    @if $dark=='false' {
+      text-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+      icon-shadow: 0 #{$shadow_pos * $_dark_shadow_pos}px $_text_icon_shadow;
+    }
+
 
     @if $border==true {
       @include _border(button-normal-border#{$_asset_suffix});
