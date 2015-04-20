@@ -79,6 +79,7 @@ Other options to pass to autogen.sh are
     --disable-gtk3             disable GTK3 support
     --disable-metacity         disable Metacity support
     --disable-unity            disable Unity support
+    --disable-xfwm             disable XFWM support
 
     --with-gnome=<version>     build the theme for a specific Gnome version (3.14, 3.16)
                                Note: Normally the correct version is detected automatically and this
