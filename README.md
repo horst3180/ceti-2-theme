@@ -31,6 +31,14 @@ If your distribution is not listed, please check the requirements yourself.
     sudo rm -rf /usr/share/themes/Ceti-2
     rm -rf ~/.local/share/themes/Ceti-2
     rm -rf ~/.themes/Ceti-2
+    
+**Packages**
+
+Arch Linux users can install the theme from the AUR
+
+https://aur.archlinux.org/packages/ceti-2-themes/
+
+https://aur.archlinux.org/packages/ceti-2-themes-git/
 
 **Manual Installation**
 
