@@ -34,6 +34,10 @@ If your distribution is not listed, please check the requirements yourself.
     
 **Packages**
 
+Prebuilt packages for Fedora and openSUSE are available at 
+
+http://software.opensuse.org/download.html?project=home%3AHorst3180&package=ceti-2-theme
+
 Arch Linux users can install the theme from the AUR
 
 https://aur.archlinux.org/packages/ceti-2-themes/
