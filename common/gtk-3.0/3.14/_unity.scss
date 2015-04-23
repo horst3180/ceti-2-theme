@@ -25,8 +25,8 @@ UnityDecoration {
 
     //background-color: $bg_color; // Decoration background
     background-image: linear-gradient(to bottom,
-                                      lighten($metacity_bg_a, 2%) 22%,
-                                      $metacity_bg_a 22%);
+                                      lighten($metacity_bg_a, 2%) 50%,
+                                      $metacity_bg_a 50%);
     color: $wm_title; // The foreground color will be used to paint the text
 
     text-shadow: 0 -1px $wm_title_shadow;
