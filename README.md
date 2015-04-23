@@ -31,6 +31,18 @@ If your distribution is not listed, please check the requirements yourself.
     sudo rm -rf /usr/share/themes/Ceti-2
     rm -rf ~/.local/share/themes/Ceti-2
     rm -rf ~/.themes/Ceti-2
+    
+**Packages**
+
+Prebuilt packages for Fedora and openSUSE are available at 
+
+http://software.opensuse.org/download.html?project=home%3AHorst3180&package=ceti-2-theme
+
+Arch Linux users can install the theme from the AUR
+
+https://aur.archlinux.org/packages/ceti-2-themes/
+
+https://aur.archlinux.org/packages/ceti-2-themes-git/
 
 **Manual Installation**
 
@@ -71,6 +83,7 @@ Other options to pass to autogen.sh are
     --disable-gtk3             disable GTK3 support
     --disable-metacity         disable Metacity support
     --disable-unity            disable Unity support
+    --disable-xfwm             disable XFWM support
 
     --with-gnome=<version>     build the theme for a specific Gnome version (3.14, 3.16)
                                Note: Normally the correct version is detected automatically and this
@@ -110,3 +123,5 @@ If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the
 
 ### Bug reporting
 If you find a bug, please report it at https://github.com/horst3180/Ceti-2-theme/issues
+
+![alt tag](http://orig13.deviantart.net/08f9/f/2015/109/d/e/ceti_2_theme_by_horst3180-d8393uc.jpg)
