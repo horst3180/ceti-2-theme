@@ -3536,22 +3536,6 @@ LibraryWindow .bottom-toolbar.toolbar {
 TotemGrilo.vertical GdMainView.frame {
   border-width: 0; }
 
-GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal,
-GtkPaned.horizontal.sidebar-pane-separator {
-  -GtkPaned-handle-size: 1;
-  border-width: 0 1px 0 0;
-  border-style: solid;
-  border-color: #adadad; }
-
-GtkPaned.horizontal.sidebar-pane-separator GtkBox.vertical.sidebar GtkFrame.frame {
-  border-width: 0 0 1px 0; }
-
-GtkPaned.horizontal.sidebar-pane-separator GtkPaned.horizontal GtkFrame.frame {
-  border-width: 0; }
-
-MainWindow.background GtkBox.vertical MainToolbar {
-  border-bottom: 1px solid #adadad; }
-
 FrWindow.background GtkBox.vertical GtkTreeView.view {
   background-color: #ffffff; }
 
@@ -3726,14 +3710,14 @@ MarlinViewWindow *:selected:focus {
     background-color: rgba(0, 0, 0, 0.15); }
 
 .gala-notification {
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 3px;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(55, 61, 68, 0.9), rgba(39, 43, 48, 0.9));
+  box-shadow: inset 0 1px white, inset 0 -1px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, rgba(246, 247, 247, 0.95), rgba(233, 234, 235, 0.95));
   background-color: transparent; }
   .gala-notification .title, .gala-notification .label {
-    color: white;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.75); }
+    color: #333333;
+    text-shadow: 0 -1px 1px white; }
 
 .panel {
   background-color: transparent;
@@ -3791,39 +3775,9 @@ MarlinViewWindow *:selected:focus {
 .menu .spinner {
   opacity: 1; }
 
-.button.app {
-  border-width: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  border-image: none;
-  background-image: none;
-  icon-shadow: none; }
-
-.app:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  icon-shadow: none; }
-
-.app:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  icon-shadow: none; }
-
-.app:active {
-  color: #333333;
-  text-shadow: 0 1px white;
-  icon-shadow: none; }
-
-.search-item {
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: none; }
-
-.search-item:hover,
-.search-item:focus {
-  background-color: #2468A0;
-  color: #ffffff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 0; }
+SlingshotWidgetsAppEntry.button:hover,
+SlingshotWidgetsSearchItem.button:hover {
+  -gtk-image-effect: none; }
 
 PantheonTerminalPantheonTerminalWindow.background {
   background-color: transparent; }
