@@ -7,15 +7,20 @@ Ceti-2 is the official continuation of Ceti for Gnome 3.14 and 3.16. It has been
 ### Requirements
 
 * Gnome/GTK 3.14 or 3.16
-* The gnome-themes-standard package
-* The GTK 2 murrine engine
+* The `gtk2-engines-pixbuf` package only for Debian/Ubuntu based distros.
+* The murrine engine. This has different names depending on your distro.
+  * `gtk-engine-murrine` (Arch Linux)
+  * `gtk2-engines-murrine` (Debian, Ubuntu, elementary OS)
+  * `gtk-murrine-engine` (Fedora)
+  * `gtk2-engine-murrine` (openSUSE)
+  * `gtk-engines-murrine` (Gentoo)
 
 Main distributions that meet these requirements are
 
 * Arch Linux and Arch Linux based distros
 * Ubuntu 15.04
 * elementary OS Freya
-* Debian Testing/Unstable
+* Debian Jessie, Testing or Unstable
 * Gentoo
 * Fedora 21 and 22
 * OpenSuse 13.2 and Tumbleweed
@@ -34,7 +39,7 @@ If your distribution is not listed, please check the requirements yourself.
     
 **Packages**
 
-Prebuilt packages for Fedora and openSUSE are available at 
+Prebuilt packages for Ubuntu, Debian, Fedora and openSUSE are available at 
 
 http://software.opensuse.org/download.html?project=home%3AHorst3180&package=ceti-2-theme
 
