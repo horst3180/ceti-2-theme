@@ -114,11 +114,6 @@ To install the alternative metacity theme, copy the `Ceti-2-alternative-metacity
 If you get artifacts like black or invisible backgrounds under Unity, disable overlay scrollbars with
 
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
-====
-
-If you experience Gnome-Shell crashes, replace the "gnome-shell.css" file in the "/usr/share/themes/Ceti-2/gnome-shell/" folder with the "gnome-shell-no-crash.css" file
-
-    sudo mv /usr/share/themes/Ceti-2/gnome-shell/gnome-shell-no-crash.css /usr/share/themes/Ceti-2/gnome-shell/gnome-shell.css
 
 
 ### Bug reporting
