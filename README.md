@@ -7,7 +7,7 @@ Ceti-2 is the official continuation of Ceti for Gnome 3.14 and 3.16. It has been
 ### Requirements
 
 * Gnome/GTK 3.14 or 3.16
-* The `gtk2-engines-pixbuf` package only for Debian/Ubuntu based distros.
+* The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
   * `gtk2-engines-murrine` (Debian, Ubuntu, elementary OS)
