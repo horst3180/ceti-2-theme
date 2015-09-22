@@ -2,7 +2,7 @@
 
 Ceti-2 is a theme for GTK 3, GTK 2 and Gnome-Shell. It supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, etc.
 
-Ceti-2 is the official continuation of Ceti for Gnome 3.14 and 3.16. It has been completely revamped and is now based on Vertex.
+Ceti-2 is the official continuation of Ceti for Gnome 3.14, 3.16 and 3.18. It has been completely revamped and is now based on Vertex.
 
 ### Requirements
 
