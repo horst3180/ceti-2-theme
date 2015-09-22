@@ -1,6 +1,6 @@
 AC_INIT(
     [ceti-2-theme],
-    [20150425],
+    [20150923],
     [https://github.com/horst3180/Ceti-2-theme/issues],
     [ceti-2-theme],
     [https://github.com/horst3180/Ceti-2-theme],
