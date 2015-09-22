@@ -6,7 +6,7 @@ Ceti-2 is the official continuation of Ceti for Gnome 3.14 and 3.16. It has been
 
 ### Requirements
 
-* Gnome/GTK 3.14 or 3.16
+* Gnome/GTK 3.14, 3.16 or 3.18
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
@@ -90,7 +90,7 @@ Other options to pass to autogen.sh are
     --disable-unity            disable Unity support
     --disable-xfwm             disable XFWM support
 
-    --with-gnome=<version>     build the theme for a specific Gnome version (3.14, 3.16)
+    --with-gnome=<version>     build the theme for a specific Gnome version (3.14, 3.16, 3.18)
                                Note: Normally the correct version is detected automatically and this
                                option should not be needed.
 
@@ -108,7 +108,7 @@ from the same directory as this README resides in, or
 
 ### Extras
 
-The `extra` directory in the same directory as this README resides in contains a Chrome/Chromium  theme and an alternative metacity theme, which hides the window titles of maximized windows (doesn't work on Gnome 3.16).
+The `extra` directory in the same directory as this README resides in contains a Chrome/Chromium  theme and an alternative metacity theme, which hides the window titles of maximized windows (doesn't work on Gnome 3.16 and up).
 
 To install the Chrome/Chromium theme go to the `extra/Chrome` folder and drag and drop the Ceti-2-chrome.crx into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/source" folder.
 
