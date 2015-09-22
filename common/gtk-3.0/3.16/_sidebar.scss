@@ -46,11 +46,6 @@ NautilusWindow .sidebar .view.cell:selected:focus {
   box-shadow: none;
 }
 
-NautilusWindow .sidebar .scrollbar.trough {
-    border-width: 0;
-    background-image: linear-gradient(to left, $base_color);
-}
-
 NemoWindow .sidebar .view.cell:selected,
 NemoWindow .sidebar .view.cell:selected:hover,
 NemoWindow .sidebar .view.cell:selected:focus,
@@ -139,35 +134,37 @@ GeditFileBrowserWidget GtkTreeView.view.expander, GeditFileBrowserWidget GtkTree
   color: $dark_sidebar_fg;
 }
 
-GeditFileBrowserWidget .scrollbars-junction,
-GeditFileBrowserWidget .scrollbar.trough,
-GeditFileBrowserWidget .scrollbar.trough.horizontal {
-  background-color: $dark_sidebar_bg;
-	background-image: none;
-	border-color: $dark_sidebar_bg;
-	border-image: none;
-}
+NautilusWindow .sidebar .scrollbar,
+NemoWindow .sidebar .scrollbar,
+GeditFileBrowserWidget .scrollbar {
 
-GeditFileBrowserWidget .scrollbar.slider.vertical {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"),url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
-}
+  &.overlay-indicator:not(.dragging):not(.hovering) {
 
-GeditFileBrowserWidget .scrollbar.slider.vertical:hover {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"),url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
-}
+    .slider { @include _border(scrollbar-slider-overlay-dark, $prefix:assets, $radius: 0, $width: 5px 4px 5px 4px, $image-width: 6 4 6 4 / 6px 4px 6px 4px); }
+    &.horizontal .slider { @include _border(scrollbar-slider-overlay-horizontal-dark, $prefix:assets, $radius: 0, $width: 4px 6px 4px 6px, $image-width: 4 6 4 6 / 4px 6px 4px 6px); }
 
-GeditFileBrowserWidget .scrollbar.slider.vertical:active {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"),url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
-}
+  }
+  // Normal Scrollbars / Overlay Scrollbars on Mouseover
+  &.trough {
+    @include _border(scrollbar-trough-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
 
-GeditFileBrowserWidget .scrollbar.slider.horizontal {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"),url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
-}
+    &.horizontal { @include _border(scrollbar-trough-horizontal-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+  }
+  &.slider {
+    @include _border(scrollbar-slider-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
 
-GeditFileBrowserWidget .scrollbar.slider.horizontal:hover {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"),url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
-}
+    &:hover, &:insensitive {
+      @include _border(scrollbar-slider-hover-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+    }
+    &:active {
+      @include _border(scrollbar-slider-active-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+    }
 
-GeditFileBrowserWidget .scrollbar.slider.horizontal:active {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"),url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8 / 8px 8px 7px 8px;
+    &.horizontal {
+      @include _border(scrollbar-slider-horizontal-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px);
+
+      &:hover, &:insensitive { @include _border(scrollbar-slider-horizontal-hover-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+      &:active { @include _border(scrollbar-slider-horizontal-active-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+    }
+  }
 }

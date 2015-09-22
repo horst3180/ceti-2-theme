@@ -4036,10 +4036,6 @@ NautilusWindow .sidebar .view.cell:selected:focus {
   border-style: none;
   box-shadow: none; }
 
-NautilusWindow .sidebar .scrollbar.trough {
-  border-width: 0;
-  background-image: linear-gradient(to left, #ffffff); }
-
 NemoWindow .sidebar .view.cell:selected,
 NemoWindow .sidebar .view.cell:selected:hover,
 NemoWindow .sidebar .view.cell:selected:focus,
@@ -4108,31 +4104,90 @@ GeditWindow .pane-separator:hover {
 GeditFileBrowserWidget GtkTreeView.view.expander, GeditFileBrowserWidget GtkTreeView.view.expander:hover {
   color: #E4E9ED; }
 
-GeditFileBrowserWidget .scrollbars-junction,
-GeditFileBrowserWidget .scrollbar.trough,
-GeditFileBrowserWidget .scrollbar.trough.horizontal {
-  background-color: #3F464D;
-  background-image: none;
-  border-color: #3F464D;
-  border-image: none; }
-
-GeditFileBrowserWidget .scrollbar.slider.vertical {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"), url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8/8px 7px 8px 8px; }
-
-GeditFileBrowserWidget .scrollbar.slider.vertical:hover {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px; }
-
-GeditFileBrowserWidget .scrollbar.slider.vertical:active {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px; }
-
-GeditFileBrowserWidget .scrollbar.slider.horizontal {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"), url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px; }
-
-GeditFileBrowserWidget .scrollbar.slider.horizontal:hover {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"), url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8/8px 8px 7px 8px; }
-
-GeditFileBrowserWidget .scrollbar.slider.horizontal:active {
-  border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"), url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8/8px 8px 7px 8px; }
+NautilusWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider,
+NemoWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider,
+GeditFileBrowserWidget .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-dark.png"), url("assets/scrollbar-slider-overlay-dark@2.png")) 6 4 6 4/6px 4px 6px 4px stretch;
+  border-radius: 0;
+  border-width: 5px 4px 5px 4px;
+  border-style: solid;
+  border-color: transparent; }
+NautilusWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal .slider,
+NemoWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal .slider,
+GeditFileBrowserWidget .scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal .slider {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-overlay-horizontal-dark.png"), url("assets/scrollbar-slider-overlay-horizontal-dark@2.png")) 4 6 4 6/4px 6px 4px 6px stretch;
+  border-radius: 0;
+  border-width: 4px 6px 4px 6px;
+  border-style: solid;
+  border-color: transparent; }
+NautilusWindow .sidebar .scrollbar.trough,
+NemoWindow .sidebar .scrollbar.trough,
+GeditFileBrowserWidget .scrollbar.trough {
+  border-image: -gtk-scaled(url("assets/scrollbar-trough-dark.png"), url("assets/scrollbar-trough-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+  border-radius: 0;
+  border-width: 8px 7px 8px 8px;
+  border-style: solid;
+  border-color: transparent; }
+  NautilusWindow .sidebar .scrollbar.trough.horizontal,
+  NemoWindow .sidebar .scrollbar.trough.horizontal,
+  GeditFileBrowserWidget .scrollbar.trough.horizontal {
+    border-image: -gtk-scaled(url("assets/scrollbar-trough-horizontal-dark.png"), url("assets/scrollbar-trough-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+    border-radius: 0;
+    border-width: 8px 8px 7px 8px;
+    border-style: solid;
+    border-color: transparent; }
+NautilusWindow .sidebar .scrollbar.slider,
+NemoWindow .sidebar .scrollbar.slider,
+GeditFileBrowserWidget .scrollbar.slider {
+  border-image: -gtk-scaled(url("assets/scrollbar-slider-dark.png"), url("assets/scrollbar-slider-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+  border-radius: 0;
+  border-width: 8px 7px 8px 8px;
+  border-style: solid;
+  border-color: transparent; }
+  NautilusWindow .sidebar .scrollbar.slider:hover, NautilusWindow .sidebar .scrollbar.slider:insensitive,
+  NemoWindow .sidebar .scrollbar.slider:hover,
+  NemoWindow .sidebar .scrollbar.slider:insensitive,
+  GeditFileBrowserWidget .scrollbar.slider:hover,
+  GeditFileBrowserWidget .scrollbar.slider:insensitive {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-hover-dark.png"), url("assets/scrollbar-slider-hover-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+    border-radius: 0;
+    border-width: 8px 7px 8px 8px;
+    border-style: solid;
+    border-color: transparent; }
+  NautilusWindow .sidebar .scrollbar.slider:active,
+  NemoWindow .sidebar .scrollbar.slider:active,
+  GeditFileBrowserWidget .scrollbar.slider:active {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-active-dark.png"), url("assets/scrollbar-slider-active-dark@2.png")) 8 7 8 8/8px 7px 8px 8px stretch;
+    border-radius: 0;
+    border-width: 8px 7px 8px 8px;
+    border-style: solid;
+    border-color: transparent; }
+  NautilusWindow .sidebar .scrollbar.slider.horizontal,
+  NemoWindow .sidebar .scrollbar.slider.horizontal,
+  GeditFileBrowserWidget .scrollbar.slider.horizontal {
+    border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-dark.png"), url("assets/scrollbar-slider-horizontal-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+    border-radius: 0;
+    border-width: 8px 8px 7px 8px;
+    border-style: solid;
+    border-color: transparent; }
+    NautilusWindow .sidebar .scrollbar.slider.horizontal:hover, NautilusWindow .sidebar .scrollbar.slider.horizontal:insensitive,
+    NemoWindow .sidebar .scrollbar.slider.horizontal:hover,
+    NemoWindow .sidebar .scrollbar.slider.horizontal:insensitive,
+    GeditFileBrowserWidget .scrollbar.slider.horizontal:hover,
+    GeditFileBrowserWidget .scrollbar.slider.horizontal:insensitive {
+      border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-hover-dark.png"), url("assets/scrollbar-slider-horizontal-hover-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 8px 7px 8px;
+      border-style: solid;
+      border-color: transparent; }
+    NautilusWindow .sidebar .scrollbar.slider.horizontal:active,
+    NemoWindow .sidebar .scrollbar.slider.horizontal:active,
+    GeditFileBrowserWidget .scrollbar.slider.horizontal:active {
+      border-image: -gtk-scaled(url("assets/scrollbar-slider-horizontal-active-dark.png"), url("assets/scrollbar-slider-horizontal-active-dark@2.png")) 8 8 7 8/8px 8px 7px 8px stretch;
+      border-radius: 0;
+      border-width: 8px 8px 7px 8px;
+      border-style: solid;
+      border-color: transparent; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;

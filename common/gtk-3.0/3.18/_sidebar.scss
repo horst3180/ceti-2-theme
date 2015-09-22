@@ -1,0 +1,195 @@
+$dark_sidebar_bg: #3F464D;
+$dark_sidebar_fg: nth($_fg_color, 2);
+
+NautilusWindow * {
+    -GtkPaned-handle-size: 0;
+}
+
+NemoWindow .sidebar,
+NemoWindow .sidebar .view,
+.gedit-document-panel,
+.gedit-document-panel .list-row,
+.gedit-document-panel .list-row.activatable:active:hover,
+GeditFileBrowserView.view {
+  background-color: $dark_sidebar_bg;
+  color: $dark_sidebar_fg;
+  text-shadow: 0 -1px transparentize(black, 0.3);
+  icon-shadow: 0 -1px transparentize(black, 0.3);
+  transition: none;
+  box-shadow: none;
+}
+
+NautilusWindow .sidebar {
+
+    &, & .view {
+      background-color: $dark_sidebar_bg;
+      box-shadow: inset -1px 0 nth($_borders_color, 2);
+    }
+
+    .separator { color: transparentize(black, 0.8); }
+
+  .list-row.activatable {
+    color: $dark_sidebar_fg;
+    text-shadow: 0 -1px transparentize(black, 0.3);
+    icon-shadow: 0 -1px transparentize(black, 0.3);
+    border-style: none;
+    transition: none;
+
+    &:hover { background-color: transparentize(white, 0.9); }
+
+    &:active {
+      background-color: transparentize(white, 0.95);
+      box-shadow: none;
+    }
+
+    &:selected {
+      background-image: url("assets/arrow#{$asset_suffix}.png"),
+                        linear-gradient(to left, nth($_borders_color, 2) 1px, transparent 1px),
+                        linear-gradient(to bottom, #51A0E0 1px, transparent 1px),
+                        linear-gradient(to top, #2A6DA6 1px, transparent 1px),
+                        linear-gradient(to bottom, #4286be, #236499);
+                        
+      background-position: right center;
+      background-repeat: no-repeat;
+      border-style: none;
+      box-shadow: none;
+      transition: none;
+    }
+  }
+
+  @at-root NautilusWindow .sidebar-button.button {
+    color: $dark_sidebar_fg;
+    text-shadow: 0 -1px transparentize(black, 0.3);
+    icon-shadow: 0 -1px transparentize(black, 0.3);
+
+    @extend .button.flat;
+
+    &:hover { @include button(hover, $dark:'true'); }
+    &:active, &:checked { @include button(active, $dark:'true'); }
+
+    &:not(:hover):not(:active) > GtkImage { opacity: 0.5 };
+  }
+}
+
+NemoWindow .sidebar .view.cell:selected,
+NemoWindow .sidebar .view.cell:selected:hover,
+NemoWindow .sidebar .view.cell:selected:focus,
+.gedit-document-panel .list-row:selected,
+GeditFileBrowserView.view.cell:selected,
+GeditFileBrowserView.view.cell:selected:hover,
+GeditFileBrowserView.view.cell:selected:focus {
+  background-image: linear-gradient(to bottom, #51A0E0 1px, transparent 1px),
+                    linear-gradient(to top, #2A6DA6 1px, transparent 1px),
+                    linear-gradient(to bottom, #4286be, #236499);
+                    
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-style: none;
+  box-shadow: none;
+}
+
+NemoWindow .pane-separator,
+NemoWindow .pane-separator:hover,
+GeditWindow .pane-separator,
+GeditWindow .pane-separator:hover {
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: nth($_borders_color, 2);
+}
+
+/*Gedit*/
+
+.gedit-document-panel-dragged-row {
+  border: 1px solid nth($_borders_color, 2);
+  background-color: darken($dark_sidebar_bg, 5%);
+  color: $dark_sidebar_fg;
+}
+
+.gedit-document-panel {
+  background-color: $dark_sidebar_bg;
+}
+
+// sidepane close button styling
+.gedit-document-panel {
+
+  .list-row .button.flat {
+    color: transparent;
+    border-width: 1px;
+    icon-shadow: none;
+
+    &:hover {
+      color: transparentize($dark_sidebar_fg, 0.0);
+      background-image: none;
+      border-color: transparentize($dark_sidebar_fg, 0.7);
+      border-width: 1px;
+      border-image: none;
+    }
+    &:active {
+      background-color: transparentize(black, 0.9);
+      background-image: none;
+      border-color: transparentize(black, 0.8);
+      border-image: none;
+      border-width: 1px;
+    }
+  }
+  .prelight-row .button.flat {
+    color: transparentize($dark_sidebar_fg, 0.3);
+    border-color: transparent;
+    icon-shadow: none;
+  }
+  .list-row:selected .button.flat,
+  .prelight-row:selected .button.flat {
+    color: transparentize($selected_fg_color, 0.3);
+    border-color: transparentize($selected_fg_color, 1);
+
+    &:hover {
+      color: $selected_fg_color;
+      border-color: transparentize($selected_fg_color, 0.7);
+      icon-shadow: none;
+    }
+    &:active {
+      border-image: none;
+      border-color: transparentize(black, 0.8);
+      background-color: transparentize(black, 0.9);
+    }
+  }
+}
+
+GeditFileBrowserWidget GtkTreeView.view.expander, GeditFileBrowserWidget GtkTreeView.view.expander:hover {
+  color: $dark_sidebar_fg;
+}
+
+NautilusWindow .sidebar .scrollbar,
+NemoWindow .sidebar .scrollbar,
+GeditFileBrowserWidget .scrollbar {
+
+  &.overlay-indicator:not(.dragging):not(.hovering) {
+
+    .slider { @include _border(scrollbar-slider-overlay-dark, $prefix:assets, $radius: 0, $width: 5px 4px 5px 4px, $image-width: 6 4 6 4 / 6px 4px 6px 4px); }
+    &.horizontal .slider { @include _border(scrollbar-slider-overlay-horizontal-dark, $prefix:assets, $radius: 0, $width: 4px 6px 4px 6px, $image-width: 4 6 4 6 / 4px 6px 4px 6px); }
+
+  }
+  // Normal Scrollbars / Overlay Scrollbars on Mouseover
+  &.trough {
+    @include _border(scrollbar-trough-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+
+    &.horizontal { @include _border(scrollbar-trough-horizontal-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+  }
+  &.slider {
+    @include _border(scrollbar-slider-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+
+    &:hover, &:insensitive {
+      @include _border(scrollbar-slider-hover-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+    }
+    &:active {
+      @include _border(scrollbar-slider-active-dark, $prefix:assets, $radius: 0, $width: 8px 7px 8px 8px, $image-width: 8 7 8 8 / 8px 7px 8px 8px);
+    }
+
+    &.horizontal {
+      @include _border(scrollbar-slider-horizontal-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px);
+
+      &:hover, &:insensitive { @include _border(scrollbar-slider-horizontal-hover-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+      &:active { @include _border(scrollbar-slider-horizontal-active-dark, $prefix:assets, $radius: 0, $width: 8px 8px 7px 8px, $image-width: 8 8 7 8 / 8px 8px 7px 8px); }
+    }
+  }
+}
