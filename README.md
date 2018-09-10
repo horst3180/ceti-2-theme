@@ -14,6 +14,7 @@ Ceti-2 is the official continuation of Ceti for Gnome 3.14, 3.16 and 3.18. It ha
   * `gtk-murrine-engine` (Fedora)
   * `gtk2-engine-murrine` (openSUSE)
   * `gtk-engines-murrine` (Gentoo)
+* The `autoconf` package
 
 Main distributions that meet these requirements are
 
